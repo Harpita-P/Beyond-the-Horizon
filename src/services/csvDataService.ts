@@ -18,7 +18,18 @@ const AVAILABLE_CSV_FILES = [
   '/canoe_kayak_olympians.csv',
   '/cross_country_skiing_olympians.csv',
   '/track_and_field_olympians.csv',
+  '/curling_olympians.csv',
+  '/cycling_olympians.csv',
+  '/diving_olympians.csv',
+  '/fencing_olympians.csv',
+  '/field_hockey_olympians.csv',
+  '/figure_skating_olympians.csv',
+  '/golf_olympians.csv',
   '/para_alpine_skiing_paralympians.csv',
+  '/para_archery_paralympians.csv',
+  '/para_badminton_paralympians.csv',
+  '/para_biathlon_paralympians.csv',
+  '/paratriathlon_paralympians.csv',
 ];
 
 // State name to code mapping
