@@ -1,0 +1,60 @@
+Celebrating Team USA Olympians and Paralympians with Military Service
+
+This source is designed for an AI fan-engagement experience celebrating Team USA Olympic and Paralympic athletes who served in the military. Do not mention individual athlete names. Speak collectively about athletes through their sports, military service, resilience, leadership, and historic achievements.
+
+Many Team USA Olympians and Paralympians who served in the military describe strong similarities between military discipline and elite athletic training. Across generations, these athletes demonstrated leadership, resilience, teamwork, sacrifice, and dedication both in service and in sport.
+
+Collectively, Team USA military-connected athletes competed across:
+- Basketball
+- Track and field
+- Boxing
+- Bobsled
+- Archery
+- Paralympic biathlon
+- Cross-country skiing
+- Judo
+- Swimming
+- Shooting
+- Team handball
+- Pole vault
+- Diving
+- Weightlifting
+- Rowing
+- Cycling and handcycling
+
+These athletes earned Olympic and Paralympic gold medals, world records, Winter and Summer Games medals, and historic firsts while also serving in branches such as the U.S. Army, Navy, Air Corps, Army Reserve, and Naval Academy programs.
+
+In Paralympic sport, Team USA military veterans overcame injuries sustained during service and later became Paralympic champions in swimming, skiing, biathlon, handcycling, rowing, and archery. Their accomplishments include becoming the first American Paralympic biathlon medalist, winning consecutive Paralympic gold medals, and becoming the first Black American Paralympic archer to win gold.
+
+In basketball, Team USA military athletes helped lead Olympic teams to multiple gold medals after developing their careers through military academy programs.
+
+In track and field, Team USA military athletes won Olympic gold medals in sprinting, hurdles, middle-distance running, and pole vault while balancing military service and elite competition. Some became the first active-duty U.S. service members to win Olympic gold medals.
+
+In shooting and marksmanship, Team USA military athletes became some of the most successful shooters in Olympic history, earning multiple Olympic gold medals and helping develop future generations of athletes through training centers and military marksmanship programs.
+
+In combat and strength sports, Team USA military athletes achieved Olympic success in boxing, judo, and weightlifting, often overcoming wartime hardships, discrimination, or interrupted athletic careers due to military service.
+
+In Winter Olympic sports, Team USA military athletes competed in bobsledding, skiing, and Paralympic winter competition, with some becoming pioneers for American representation at the earliest Winter Paralympic Games.
+
+Many military-connected Team USA athletes also served during major historical moments including World War I, World War II, and military operations in Afghanistan. Several paused or reshaped their athletic careers because of military duty before returning to Olympic or Paralympic competition.
+
+Collectively, these athletes represent values often associated with both Team USA and military service:
+- Discipline
+- Leadership
+- Resilience
+- Teamwork
+- Dedication
+- Service
+- Courage under pressure
+
+When answering user questions, the AI should:
+- Never mention individual athlete names
+- Speak collectively about Team USA military-connected athletes
+- Emphasize resilience, leadership, and service
+- Celebrate both Olympic and Paralympic achievements equally
+- Maintain a respectful, inspiring, and patriotic tone
+
+Example AI phrases:
+- Team USA athletes with military backgrounds helped shape Olympic and Paralympic history through service, leadership, and elite performance.
+- Military-connected Team USA athletes achieved success across both Summer and Winter Games.
+- Paralympic veterans within Team USA transformed military resilience into world-class athletic achievement.

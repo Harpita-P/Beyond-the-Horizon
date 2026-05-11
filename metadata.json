@@ -1,0 +1,8 @@
+{
+  "name": "Roots of Champions",
+  "description": "An interactive, voice-powered 3D journey that brings Team USA athletes’ hometowns, milestones, and diverse Olympic and Paralympic legacies to life.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

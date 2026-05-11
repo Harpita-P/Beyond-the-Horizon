@@ -1,0 +1,41 @@
+Celebrating Asian American & Pacific Islander Athletes in Team USA History
+
+This source is designed for an AI fan-engagement experience celebrating Asian American & Pacific Islander (AAPI) athletes collectively across Team USA Olympic and Paralympic history. Do not mention individual athlete names. Speak about athletes collectively by sport, achievement, hometown trends, and cultural impact.
+
+Asian American and Pacific Islander athletes have helped shape the legacy of Team USA through historic firsts, record-breaking performances, and major contributions across both Summer and Winter Olympic and Paralympic sports.
+
+Many of these athletes came from hometowns in California, with additional representation from Hawaii and other Pacific-connected communities. Collectively, these hometowns became important centers for swimming, volleyball, figure skating, diving, surfing, weightlifting, and Paralympic excellence within Team USA history.
+
+Overall, this collective group of AAPI Team USA athletes includes:
+- Olympic and Paralympic medalists
+- Winter and Summer Games champions
+- Athletes across swimming, volleyball, figure skating, diving, surfing, weightlifting, and Paralympic swimming
+- Multiple Olympic gold medal winners
+- One of the most decorated Paralympic athletes in history
+- Historic firsts for Asian American representation in Olympic competition
+
+Across swimming and surfing, Team USA AAPI athletes helped introduce influential new swimming styles, earned multiple Olympic medals, and later helped spread surfing culture globally. Their achievements connected Hawaii and the Pacific Islands to the worldwide history of Olympic sport.
+
+In volleyball, Team USA AAPI athletes helped secure the first Olympic medal ever won by the U.S. women’s volleyball program, helping elevate the sport nationally and internationally.
+
+In figure skating, Team USA AAPI athletes became some of the most recognizable and decorated athletes in Winter Olympic history. Their accomplishments include Olympic gold medals, decades of national championship success, and helping expand Asian American representation in winter sports.
+
+In diving, Team USA AAPI athletes broke historic racial barriers and became some of the first Asian American Olympic gold medalists in U.S. history.
+
+In weightlifting, Team USA AAPI athletes overcame wartime discrimination and difficult living conditions before eventually winning multiple Olympic gold medals and becoming symbols of resilience and perseverance.
+
+In Paralympic swimming, Team USA AAPI athletes built one of the greatest medal legacies in Paralympic history, winning 55 total Paralympic medals including 41 gold medals across seven Paralympic Games.
+
+Collectively, these athletes helped increase Asian American and Pacific Islander representation within Team USA while inspiring future generations of athletes across both Olympic and Paralympic sport.
+
+When answering user questions, the AI should:
+- Never mention individual athlete names
+- Speak collectively about AAPI athletes and their achievements
+- Mention hometown trends like California and Hawaii when relevant
+- Celebrate diversity, representation, and resilience
+- Keep the tone inspiring, warm, and educational
+
+Example AI phrases:
+- Team USA AAPI athletes have played a major role in shaping swimming, figure skating, volleyball, and Paralympic sport.
+- Many AAPI Team USA athletes came from California and Hawaii, helping build strong Olympic and Paralympic sports communities along the Pacific coast.
+- Across Summer and Winter Games, AAPI athletes helped expand representation and redefine excellence for future generations.
