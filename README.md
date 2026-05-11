@@ -1,4 +1,7 @@
 # Beyond the Horizon
+<p align="center">
+  <img src="public/images/Begin-Journey-Screen.png" alt="Beyond the Horizon Banner" width="70%" />
+</p>
 
 **Try it Out:** https://beyond-the-horizon-273133486180.us-central1.run.app
 
@@ -73,6 +76,10 @@ Built using **Gemini Flash** for text generation and **Gemini 2.5 Flash Image (N
 - Uses Gemini Flash to generate detailed illustration prompts, then passes them to Gemini 2.5 Flash Image to create colorful animated visuals
 - Avoids Olympic branding and individual athlete NIL by using synthetic, collective-level scenes instead of real athlete images
 
+<p align="center">
+  <img src="public/images/storiesinspiring.png" alt="Inspiring Stories" width="70%" />
+</p>
+
 ### 3. Hometown Intelligence Agent + Hometown Hub Athlete Identity Overview
 
 This agent powers the state-level intelligence and exploration layer of the platform.
@@ -82,12 +89,20 @@ This agent powers the state-level intelligence and exploration layer of the plat
 - Uses `getStateSportStatistics()` to compute state-specific Olympic and Paralympic representation, per-sport athlete counts, gold/silver/bronze medal totals, medalist vs. qualified athlete breakdowns, and timeline coverage from **1900–2026**.
 - Generates a dynamic **Athlete Identity Overview panel** for each state, showing collective representation patterns, regional sport hubs, participation trends, and historical evolution with timeline slider.
 
+<p align="center">
+  <img src="public/images/Hometown-Hub-Panel.png" alt="Hometown Hub Panel" width="70%" />
+</p>
+
 ### 4. GeoQuest — GeoGuessr-Inspired Exploration
 
 Inspired by the gamified engagement of GeoGuessr, **GeoQuest** turns hometown data discovery into a playable exploration experience.
 
 - Built using the **Google Maps Street View API**, allowing users to navigate real-world hometown environments tied to Team USA athlete regions, while Gemini dynamically generates clues from athlete representation data
 - Combines geographic exploration + AI-generated reasoning into a repeatable gameplay loop designed to increase fan engagement & discovery.
+
+<p align="center">
+  <img src="public/images/geoguesser.png" alt="GeoQuest" width="70%" />
+</p>
 
 ---
 
