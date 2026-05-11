@@ -153,7 +153,7 @@ export function useGeminiLive(
           DATA ACCESS & SPORT INFERENCE:
           - You have access to CSV files containing collective athlete data organized by sport and category
           - When users mention a sport, identify it and load the corresponding CSV data
-          - Available sports: 3x3 Basketball, Alpine Skiing, Archery, Artistic Gymnastics, Artistic Swimming, Badminton, Baseball, Basketball, Beach Volleyball, Biathlon, Bobsled, Boxing, Canoe/Kayak, Cross-Country Skiing, Track and Field, Curling, Cycling, Diving, Fencing, Field Hockey, Figure Skating, Golf, Para Alpine Skiing, Para Archery, Para Badminton, Para Biathlon, Paratriathlon
+          - Available sports: 3x3 Basketball, Alpine Skiing, Archery, Artistic Gymnastics, Artistic Swimming, Badminton, Baseball, Basketball, Beach Volleyball, Biathlon, Bobsled, Boxing, Canoe/Kayak, Cross-Country Skiing, Track and Field, Curling, Cycling, Diving, Fencing, Field Hockey, Figure Skating, Golf, Rugby, Rowing, Volleyball, Water Polo, Wrestling, Snowboarding, Soccer, Softball, Speedskating, Surfing, Swimming, Taekwondo, Tennis, Triathlon, Gymnastics, Ice Hockey, Shooting, Skateboarding, Para Alpine Skiing, Para Archery, Para Badminton, Para Biathlon, Para Shooting, Para Snowboarding, Para Swimming, Para Track and Field, Paratriathlon, Wheelchair Basketball, Wheelchair Fencing, Wheelchair Rugby, Wheelchair Tennis, Sled Hockey
           - Use the 'highlight_states' tool to show geographic representation on the map
           - ALWAYS include sport names in the 'sports' parameter for proper display
 

@@ -130,8 +130,26 @@ export function Scene() {
           csvFile = '/para_badminton_paralympians.csv';
         } else if (sportFilter === 'Para Biathlon') {
           csvFile = '/para_biathlon_paralympians.csv';
+        } else if (sportFilter === 'Para Shooting') {
+          csvFile = '/para_shooting_paralympians.csv';
+        } else if (sportFilter === 'Para Snowboarding') {
+          csvFile = '/para_snowboarding_paralympians.csv';
+        } else if (sportFilter === 'Para Swimming') {
+          csvFile = '/para_swimming_paralympians.csv';
+        } else if (sportFilter === 'Para Track and Field') {
+          csvFile = '/para_track_and_field_paralympians.csv';
         } else if (sportFilter === 'Paratriathlon') {
           csvFile = '/paratriathlon_paralympians.csv';
+        } else if (sportFilter === 'Wheelchair Basketball') {
+          csvFile = '/wheelchair_basketball_paralympians.csv';
+        } else if (sportFilter === 'Wheelchair Fencing') {
+          csvFile = '/wheelchair_fencing_paralympians.csv';
+        } else if (sportFilter === 'Wheelchair Rugby') {
+          csvFile = '/wheelchair_rugby_paralympians.csv';
+        } else if (sportFilter === 'Wheelchair Tennis') {
+          csvFile = '/wheelchair_tennis_paralympians.csv';
+        } else if (sportFilter === 'Sled Hockey') {
+          csvFile = '/sled_hockey_paralympians.csv';
         } else {
           csvFile = '/para_alpine_skiing_paralympians.csv';
         }
@@ -237,6 +255,42 @@ export function Scene() {
           csvFile = '/figure_skating_olympians.csv';
         } else if (sportFilter === 'Golf') {
           csvFile = '/golf_olympians.csv';
+        } else if (sportFilter === 'Rugby') {
+          csvFile = '/rugby_olympians.csv';
+        } else if (sportFilter === 'Rowing') {
+          csvFile = '/rowing_olympians.csv';
+        } else if (sportFilter === 'Volleyball') {
+          csvFile = '/volleyball_olympians.csv';
+        } else if (sportFilter === 'Water Polo') {
+          csvFile = '/water_polo_olympians.csv';
+        } else if (sportFilter === 'Wrestling') {
+          csvFile = '/wrestling_olympians.csv';
+        } else if (sportFilter === 'Snowboarding') {
+          csvFile = '/snowboarding_olympians.csv';
+        } else if (sportFilter === 'Soccer') {
+          csvFile = '/soccer_olympians.csv';
+        } else if (sportFilter === 'Softball') {
+          csvFile = '/softball_olympians.csv';
+        } else if (sportFilter === 'Speedskating') {
+          csvFile = '/speedskating_olympians.csv';
+        } else if (sportFilter === 'Surfing') {
+          csvFile = '/surfing_olympians.csv';
+        } else if (sportFilter === 'Swimming') {
+          csvFile = '/swimming_olympians.csv';
+        } else if (sportFilter === 'Taekwondo') {
+          csvFile = '/taekwondo_olympians.csv';
+        } else if (sportFilter === 'Tennis') {
+          csvFile = '/tennis_olympians.csv';
+        } else if (sportFilter === 'Triathlon') {
+          csvFile = '/triathlon_olympians.csv';
+        } else if (sportFilter === 'Gymnastics') {
+          csvFile = '/gymnastics_olympians.csv';
+        } else if (sportFilter === 'Ice Hockey') {
+          csvFile = '/ice_hockey_olympians.csv';
+        } else if (sportFilter === 'Shooting') {
+          csvFile = '/shooting_olympians.csv';
+        } else if (sportFilter === 'Skateboarding') {
+          csvFile = '/skateboarding_olympians.csv';
         } else {
           csvFile = '/para_alpine_skiing_paralympians.csv';
         }
@@ -411,14 +465,68 @@ export function Scene() {
         csvFile = '/figure_skating_olympians.csv';
       } else if (sportLower.includes('golf')) {
         csvFile = '/golf_olympians.csv';
+      } else if (sportLower.includes('rugby')) {
+        csvFile = '/rugby_olympians.csv';
+      } else if (sportLower.includes('rowing')) {
+        csvFile = '/rowing_olympians.csv';
+      } else if (sportLower.includes('volleyball') && !sportLower.includes('beach')) {
+        csvFile = '/volleyball_olympians.csv';
+      } else if (sportLower.includes('water') && sportLower.includes('polo')) {
+        csvFile = '/water_polo_olympians.csv';
+      } else if (sportLower.includes('wrestling')) {
+        csvFile = '/wrestling_olympians.csv';
+      } else if (sportLower.includes('snowboarding')) {
+        csvFile = '/snowboarding_olympians.csv';
+      } else if (sportLower.includes('soccer') || sportLower.includes('football')) {
+        csvFile = '/soccer_olympians.csv';
+      } else if (sportLower.includes('softball')) {
+        csvFile = '/softball_olympians.csv';
+      } else if (sportLower.includes('speed') && sportLower.includes('skating')) {
+        csvFile = '/speedskating_olympians.csv';
+      } else if (sportLower.includes('surfing')) {
+        csvFile = '/surfing_olympians.csv';
+      } else if (sportLower.includes('swimming') && !sportLower.includes('artistic') && !sportLower.includes('synchronized')) {
+        csvFile = '/swimming_olympians.csv';
+      } else if (sportLower.includes('taekwondo')) {
+        csvFile = '/taekwondo_olympians.csv';
+      } else if (sportLower.includes('tennis')) {
+        csvFile = '/tennis_olympians.csv';
+      } else if (sportLower.includes('triathlon')) {
+        csvFile = '/triathlon_olympians.csv';
+      } else if (sportLower.includes('gymnastics')) {
+        csvFile = '/gymnastics_olympians.csv';
+      } else if (sportLower.includes('ice') && sportLower.includes('hockey')) {
+        csvFile = '/ice_hockey_olympians.csv';
+      } else if (sportLower.includes('shooting') && !sportLower.includes('para')) {
+        csvFile = '/shooting_olympians.csv';
+      } else if (sportLower.includes('skateboarding')) {
+        csvFile = '/skateboarding_olympians.csv';
       } else if (sportLower.includes('para') && sportLower.includes('archery')) {
         csvFile = '/para_archery_paralympians.csv';
       } else if (sportLower.includes('para') && sportLower.includes('badminton')) {
         csvFile = '/para_badminton_paralympians.csv';
       } else if (sportLower.includes('para') && sportLower.includes('biathlon')) {
         csvFile = '/para_biathlon_paralympians.csv';
+      } else if (sportLower.includes('para') && sportLower.includes('shooting')) {
+        csvFile = '/para_shooting_paralympians.csv';
+      } else if (sportLower.includes('para') && sportLower.includes('snowboarding')) {
+        csvFile = '/para_snowboarding_paralympians.csv';
+      } else if (sportLower.includes('para') && sportLower.includes('swimming')) {
+        csvFile = '/para_swimming_paralympians.csv';
+      } else if (sportLower.includes('para') && sportLower.includes('track') && sportLower.includes('field')) {
+        csvFile = '/para_track_and_field_paralympians.csv';
       } else if (sportLower.includes('paratriathlon')) {
         csvFile = '/paratriathlon_paralympians.csv';
+      } else if (sportLower.includes('wheelchair') && sportLower.includes('basketball')) {
+        csvFile = '/wheelchair_basketball_paralympians.csv';
+      } else if (sportLower.includes('wheelchair') && sportLower.includes('fencing')) {
+        csvFile = '/wheelchair_fencing_paralympians.csv';
+      } else if (sportLower.includes('wheelchair') && sportLower.includes('rugby')) {
+        csvFile = '/wheelchair_rugby_paralympians.csv';
+      } else if (sportLower.includes('wheelchair') && sportLower.includes('tennis')) {
+        csvFile = '/wheelchair_tennis_paralympians.csv';
+      } else if (sportLower.includes('sled') && sportLower.includes('hockey')) {
+        csvFile = '/sled_hockey_paralympians.csv';
       } else if (sportLower.includes('para') || sportLower.includes('paralympic')) {
         csvFile = '/para_alpine_skiing_paralympians.csv';
       } else {
@@ -586,6 +694,78 @@ TOP STATES: ${topStates}
         csvFile = '/golf_olympians.csv';
         sportName = 'Golf';
         category = 'olympians';
+      } else if (inferredSport.includes('rugby')) {
+        csvFile = '/rugby_olympians.csv';
+        sportName = 'Rugby';
+        category = 'olympians';
+      } else if (inferredSport.includes('rowing')) {
+        csvFile = '/rowing_olympians.csv';
+        sportName = 'Rowing';
+        category = 'olympians';
+      } else if (inferredSport.includes('volleyball') && !inferredSport.includes('beach')) {
+        csvFile = '/volleyball_olympians.csv';
+        sportName = 'Volleyball';
+        category = 'olympians';
+      } else if (inferredSport.includes('water') && inferredSport.includes('polo')) {
+        csvFile = '/water_polo_olympians.csv';
+        sportName = 'Water Polo';
+        category = 'olympians';
+      } else if (inferredSport.includes('wrestling')) {
+        csvFile = '/wrestling_olympians.csv';
+        sportName = 'Wrestling';
+        category = 'olympians';
+      } else if (inferredSport.includes('snowboarding')) {
+        csvFile = '/snowboarding_olympians.csv';
+        sportName = 'Snowboarding';
+        category = 'olympians';
+      } else if (inferredSport.includes('soccer') || inferredSport.includes('football')) {
+        csvFile = '/soccer_olympians.csv';
+        sportName = 'Soccer';
+        category = 'olympians';
+      } else if (inferredSport.includes('softball')) {
+        csvFile = '/softball_olympians.csv';
+        sportName = 'Softball';
+        category = 'olympians';
+      } else if (inferredSport.includes('speed') && inferredSport.includes('skating')) {
+        csvFile = '/speedskating_olympians.csv';
+        sportName = 'Speedskating';
+        category = 'olympians';
+      } else if (inferredSport.includes('surfing')) {
+        csvFile = '/surfing_olympians.csv';
+        sportName = 'Surfing';
+        category = 'olympians';
+      } else if (inferredSport.includes('swimming') && !inferredSport.includes('artistic') && !inferredSport.includes('synchronized')) {
+        csvFile = '/swimming_olympians.csv';
+        sportName = 'Swimming';
+        category = 'olympians';
+      } else if (inferredSport.includes('taekwondo')) {
+        csvFile = '/taekwondo_olympians.csv';
+        sportName = 'Taekwondo';
+        category = 'olympians';
+      } else if (inferredSport.includes('tennis')) {
+        csvFile = '/tennis_olympians.csv';
+        sportName = 'Tennis';
+        category = 'olympians';
+      } else if (inferredSport.includes('triathlon')) {
+        csvFile = '/triathlon_olympians.csv';
+        sportName = 'Triathlon';
+        category = 'olympians';
+      } else if (inferredSport.includes('gymnastics')) {
+        csvFile = '/gymnastics_olympians.csv';
+        sportName = 'Gymnastics';
+        category = 'olympians';
+      } else if (inferredSport.includes('ice') && inferredSport.includes('hockey')) {
+        csvFile = '/ice_hockey_olympians.csv';
+        sportName = 'Ice Hockey';
+        category = 'olympians';
+      } else if (inferredSport.includes('shooting') && !inferredSport.includes('para')) {
+        csvFile = '/shooting_olympians.csv';
+        sportName = 'Shooting';
+        category = 'olympians';
+      } else if (inferredSport.includes('skateboarding')) {
+        csvFile = '/skateboarding_olympians.csv';
+        sportName = 'Skateboarding';
+        category = 'olympians';
       } else if (inferredSport.includes('para') && inferredSport.includes('archery')) {
         csvFile = '/para_archery_paralympians.csv';
         sportName = 'Para Archery';
@@ -598,9 +778,45 @@ TOP STATES: ${topStates}
         csvFile = '/para_biathlon_paralympians.csv';
         sportName = 'Para Biathlon';
         category = 'paralympians';
+      } else if (inferredSport.includes('para') && inferredSport.includes('shooting')) {
+        csvFile = '/para_shooting_paralympians.csv';
+        sportName = 'Para Shooting';
+        category = 'paralympians';
+      } else if (inferredSport.includes('para') && inferredSport.includes('snowboarding')) {
+        csvFile = '/para_snowboarding_paralympians.csv';
+        sportName = 'Para Snowboarding';
+        category = 'paralympians';
+      } else if (inferredSport.includes('para') && inferredSport.includes('swimming')) {
+        csvFile = '/para_swimming_paralympians.csv';
+        sportName = 'Para Swimming';
+        category = 'paralympians';
+      } else if (inferredSport.includes('para') && inferredSport.includes('track') && inferredSport.includes('field')) {
+        csvFile = '/para_track_and_field_paralympians.csv';
+        sportName = 'Para Track and Field';
+        category = 'paralympians';
       } else if (inferredSport.includes('paratriathlon')) {
         csvFile = '/paratriathlon_paralympians.csv';
         sportName = 'Paratriathlon';
+        category = 'paralympians';
+      } else if (inferredSport.includes('wheelchair') && inferredSport.includes('basketball')) {
+        csvFile = '/wheelchair_basketball_paralympians.csv';
+        sportName = 'Wheelchair Basketball';
+        category = 'paralympians';
+      } else if (inferredSport.includes('wheelchair') && inferredSport.includes('fencing')) {
+        csvFile = '/wheelchair_fencing_paralympians.csv';
+        sportName = 'Wheelchair Fencing';
+        category = 'paralympians';
+      } else if (inferredSport.includes('wheelchair') && inferredSport.includes('rugby')) {
+        csvFile = '/wheelchair_rugby_paralympians.csv';
+        sportName = 'Wheelchair Rugby';
+        category = 'paralympians';
+      } else if (inferredSport.includes('wheelchair') && inferredSport.includes('tennis')) {
+        csvFile = '/wheelchair_tennis_paralympians.csv';
+        sportName = 'Wheelchair Tennis';
+        category = 'paralympians';
+      } else if (inferredSport.includes('sled') && inferredSport.includes('hockey')) {
+        csvFile = '/sled_hockey_paralympians.csv';
+        sportName = 'Sled Hockey';
         category = 'paralympians';
       } else if (inferredSport.includes('para') || inferredSport.includes('paralympic')) {
         csvFile = '/para_alpine_skiing_paralympians.csv';
@@ -784,6 +1000,60 @@ TOP STATES: ${topStates}
         } else if (sportFilter === 'Golf') {
           csvFile = '/golf_olympians.csv';
           category = 'olympians';
+        } else if (sportFilter === 'Rugby') {
+          csvFile = '/rugby_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Rowing') {
+          csvFile = '/rowing_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Volleyball') {
+          csvFile = '/volleyball_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Water Polo') {
+          csvFile = '/water_polo_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Wrestling') {
+          csvFile = '/wrestling_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Snowboarding') {
+          csvFile = '/snowboarding_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Soccer') {
+          csvFile = '/soccer_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Softball') {
+          csvFile = '/softball_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Speedskating') {
+          csvFile = '/speedskating_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Surfing') {
+          csvFile = '/surfing_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Swimming') {
+          csvFile = '/swimming_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Taekwondo') {
+          csvFile = '/taekwondo_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Tennis') {
+          csvFile = '/tennis_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Triathlon') {
+          csvFile = '/triathlon_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Gymnastics') {
+          csvFile = '/gymnastics_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Ice Hockey') {
+          csvFile = '/ice_hockey_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Shooting') {
+          csvFile = '/shooting_olympians.csv';
+          category = 'olympians';
+        } else if (sportFilter === 'Skateboarding') {
+          csvFile = '/skateboarding_olympians.csv';
+          category = 'olympians';
         } else if (sportFilter === 'Para Archery') {
           csvFile = '/para_archery_paralympians.csv';
           category = 'paralympians';
@@ -793,8 +1063,35 @@ TOP STATES: ${topStates}
         } else if (sportFilter === 'Para Biathlon') {
           csvFile = '/para_biathlon_paralympians.csv';
           category = 'paralympians';
+        } else if (sportFilter === 'Para Shooting') {
+          csvFile = '/para_shooting_paralympians.csv';
+          category = 'paralympians';
+        } else if (sportFilter === 'Para Snowboarding') {
+          csvFile = '/para_snowboarding_paralympians.csv';
+          category = 'paralympians';
+        } else if (sportFilter === 'Para Swimming') {
+          csvFile = '/para_swimming_paralympians.csv';
+          category = 'paralympians';
+        } else if (sportFilter === 'Para Track and Field') {
+          csvFile = '/para_track_and_field_paralympians.csv';
+          category = 'paralympians';
         } else if (sportFilter === 'Paratriathlon') {
           csvFile = '/paratriathlon_paralympians.csv';
+          category = 'paralympians';
+        } else if (sportFilter === 'Wheelchair Basketball') {
+          csvFile = '/wheelchair_basketball_paralympians.csv';
+          category = 'paralympians';
+        } else if (sportFilter === 'Wheelchair Fencing') {
+          csvFile = '/wheelchair_fencing_paralympians.csv';
+          category = 'paralympians';
+        } else if (sportFilter === 'Wheelchair Rugby') {
+          csvFile = '/wheelchair_rugby_paralympians.csv';
+          category = 'paralympians';
+        } else if (sportFilter === 'Wheelchair Tennis') {
+          csvFile = '/wheelchair_tennis_paralympians.csv';
+          category = 'paralympians';
+        } else if (sportFilter === 'Sled Hockey') {
+          csvFile = '/sled_hockey_paralympians.csv';
           category = 'paralympians';
         } else {
           csvFile = '/para_alpine_skiing_paralympians.csv';
@@ -1174,11 +1471,38 @@ TOP STATES: ${topStates}
                 <option value="Field Hockey">Field Hockey</option>
                 <option value="Figure Skating">Figure Skating</option>
                 <option value="Golf">Golf</option>
+                <option value="Rugby">Rugby</option>
+                <option value="Rowing">Rowing</option>
+                <option value="Volleyball">Volleyball</option>
+                <option value="Water Polo">Water Polo</option>
+                <option value="Wrestling">Wrestling</option>
+                <option value="Snowboarding">Snowboarding</option>
+                <option value="Soccer">Soccer</option>
+                <option value="Softball">Softball</option>
+                <option value="Speedskating">Speedskating</option>
+                <option value="Surfing">Surfing</option>
+                <option value="Swimming">Swimming</option>
+                <option value="Taekwondo">Taekwondo</option>
+                <option value="Tennis">Tennis</option>
+                <option value="Triathlon">Triathlon</option>
+                <option value="Gymnastics">Gymnastics</option>
+                <option value="Ice Hockey">Ice Hockey</option>
+                <option value="Shooting">Shooting</option>
+                <option value="Skateboarding">Skateboarding</option>
                 <option value="Para Alpine Skiing">Para Alpine Skiing</option>
                 <option value="Para Archery">Para Archery</option>
                 <option value="Para Badminton">Para Badminton</option>
                 <option value="Para Biathlon">Para Biathlon</option>
+                <option value="Para Shooting">Para Shooting</option>
+                <option value="Para Snowboarding">Para Snowboarding</option>
+                <option value="Para Swimming">Para Swimming</option>
+                <option value="Para Track and Field">Para Track and Field</option>
                 <option value="Paratriathlon">Paratriathlon</option>
+                <option value="Wheelchair Basketball">Wheelchair Basketball</option>
+                <option value="Wheelchair Fencing">Wheelchair Fencing</option>
+                <option value="Wheelchair Rugby">Wheelchair Rugby</option>
+                <option value="Wheelchair Tennis">Wheelchair Tennis</option>
+                <option value="Sled Hockey">Sled Hockey</option>
               </select>
             </div>
 
