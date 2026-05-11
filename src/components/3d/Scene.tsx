@@ -39,6 +39,27 @@ interface StateStats {
 }
 
 export function Scene() {
+  // Helper function to check if a sport is Paralympic
+  const isParalympicSport = (sport: string): boolean => {
+    const paralympicSports = [
+      'Para Alpine Skiing',
+      'Para Archery',
+      'Para Badminton',
+      'Para Biathlon',
+      'Para Shooting',
+      'Para Snowboarding',
+      'Para Swimming',
+      'Para Track and Field',
+      'Paratriathlon',
+      'Sled Hockey',
+      'Wheelchair Basketball',
+      'Wheelchair Fencing',
+      'Wheelchair Rugby',
+      'Wheelchair Tennis'
+    ];
+    return paralympicSports.includes(sport);
+  };
+
   const [loaded, setLoaded] = useState(false);
   const [statePositions, setStatePositions] = useState<{ name: string, pos: [number, number, number] }[]>([]);
   const [activePitStop, setActivePitStop] = useState<string | null>(null);
@@ -1514,26 +1535,26 @@ TOP STATES: ${topStates}
               <div className="grid grid-cols-2 gap-2">
                 <button
                   onClick={() => setPendingCategory('paralympians')}
-                  disabled={!sportFilter.startsWith('Para')}
+                  disabled={!isParalympicSport(sportFilter)}
                   className={cn(
                     "px-4 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all border-2",
                     pendingCategory === 'paralympians'
                       ? "bg-[#BF0A30] text-white border-[#BF0A30] shadow-lg shadow-[#BF0A30]/30"
                       : "bg-white text-slate-600 border-slate-200 hover:border-[#BF0A30]/30 hover:bg-slate-50",
-                    !sportFilter.startsWith('Para') ? "opacity-50 cursor-not-allowed" : ""
+                    !isParalympicSport(sportFilter) ? "opacity-50 cursor-not-allowed" : ""
                   )}
                 >
                   Paralympics
                 </button>
                 <button
                   onClick={() => setPendingCategory('olympians')}
-                  disabled={sportFilter.startsWith('Para')}
+                  disabled={isParalympicSport(sportFilter)}
                   className={cn(
                     "px-4 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all border-2",
                     pendingCategory === 'olympians'
                       ? "bg-[#BF0A30] text-white border-[#BF0A30] shadow-lg shadow-[#BF0A30]/30"
                       : "bg-white text-slate-600 border-slate-200 hover:border-[#BF0A30]/30 hover:bg-slate-50",
-                    sportFilter.startsWith('Para') ? "opacity-50 cursor-not-allowed" : ""
+                    isParalympicSport(sportFilter) ? "opacity-50 cursor-not-allowed" : ""
                   )}
                 >
                   Olympics
