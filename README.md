@@ -68,6 +68,10 @@ Built using the **Google Gemini 3.1 Flash Live Preview API**, **Google Gen AI SD
   <img src="public/images/wheelchairtennis.png" alt="Wheelchair Tennis" width="70%" />
 </p>
 
+<p align="center">
+  <img src="public/images/charts.png" alt="Charts" width="70%" />
+</p>
+
 ### 2. Generative Storytelling Agent
 
 We created this agent to make the experience feel human, emotional, and inspiring — not just analytical.
