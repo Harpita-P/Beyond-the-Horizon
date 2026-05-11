@@ -6,7 +6,7 @@
 
 ## Quick Start
 
-### Run Locally
+### Spin up instructions
 
 **Prerequisites:** Node.js 18+, npm
 
@@ -26,7 +26,7 @@
    npm run dev
    ```
 
-## A New Experience to Explore Team USA Data
+## A New Fan Experience to Explore Team USA Data
 
 **Beyond the Horizon** is a **multi-agent AI experience powered by Gemini** that transforms **127 years (1900–2026)** of Team USA Olympic & Paralympic athlete data into an immersive, explorable 3D world. Powered by a **Conversational Data Analyst Agent**, **Hometown Intelligence Agent**, and **Storytelling Agent**, fans can fly across the United States to uncover hometown patterns, collective milestones, regional hubs, and inspiring stories across diverse athlete communities.
 
@@ -34,11 +34,9 @@ The app is inherently **multimodal**, combining voice interaction + 3D immersion
 
 ## Dataset Construction & Map Intelligence
 
-Our dataset was built entirely from **publicly available Team USA data** from the Official Team USA Website (www.teamusa.com), following the hackathon's strict public-only data policy. We structured data for **2,238 Team USA athletes** across **54 sports**, including **40 Olympic** and **14 Paralympic sports**, with a deliberate emphasis on strong **Paralympic representation** through sports such as Para Swimming, Para Track & Field, Wheelchair Basketball, Wheelchair Rugby, Sled Hockey, and Wheelchair Tennis. The dataset spans **1,188 hometown cities**, **68 states and territories**, and **127 years** of Team USA representation from **1900–2026**.
+The dataset was built entirely from **publicly available Team USA data** from the Official Team USA Website (www.teamusa.com), following the hackathon's strict public-only data policy. We structured data for **2,238 Team USA athletes** across **54 sports**, including **40 Olympic** and **14 Paralympic sports**, with a deliberate emphasis on strong **Paralympic representation** through sports such as Para Swimming, Para Track & Field, Wheelchair Basketball, Wheelchair Rugby, Sled Hockey, and Wheelchair Tennis. The dataset spans **1,188 hometown cities**, **68 states and territories**, and **127 years** of Team USA representation from **1900–2026**.
 
-To transform large amounts of unstructured athlete-profile data into clean, analysis-ready formats, we used **Gemini** to process, normalize, validate, and structure the data into dynamic CSV pipelines optimized for our multi-agent architecture. We additionally integrated the **Google Maps API** alongside a custom-built **USMap3D component with state-level granularity** to power immersive geographic exploration and hometown-based interaction throughout the platform.
-
-Importantly, the platform was intentionally designed to comply with all Team USA data usage guidelines: the application displays **no individual athlete NIL (name, image, or likeness)** and instead surfaces only **collective, aggregated insights** across sports, states, and communities. We also strictly avoided prohibited data such as finish times or detailed scoring results, relying only on permitted public information including medals, sport participation, and hometown representation.
+**Gemini** structures public Team USA data into clean CSV pipelines for multi-agent analysis. **Google Maps API** and **USMap3D** power state-level geographic exploration. The app shows **no individual athlete NIL** and uses only permitted public data: medals, participation, and hometown representation.
 
 ## Technical Overview
 
@@ -79,6 +77,7 @@ Built using **Gemini Flash** for text generation and **Gemini 2.5 Flash Image (N
 
 This agent powers the state-level intelligence and exploration layer of the platform.
 
+- Uses  'Google Search tool' to retrieve context on potential hometown training sites, pathways, regional sport infrastructure, and programs that may help foster Team USA excellence, including Paralympic training hubs.
 - Processes **54 structured CSV datasets** using **PapaParse**, aggregating athlete hometown data across sports, medal counts, years represented, education, and regional metadata.
 - Uses `getStateSportStatistics()` to compute state-specific Olympic and Paralympic representation, per-sport athlete counts, gold/silver/bronze medal totals, medalist vs. qualified athlete breakdowns, and timeline coverage from **1900–2026**.
 - Generates a dynamic **Athlete Identity Overview panel** for each state, showing collective representation patterns, regional sport hubs, participation trends, and historical evolution with timeline slider.
