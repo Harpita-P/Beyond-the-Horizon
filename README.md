@@ -1,6 +1,6 @@
 # Beyond the Horizon
 
-**Live Demo:** https://beyond-the-horizon-273133486180.us-central1.run.app
+**Try it Out:** https://beyond-the-horizon-273133486180.us-central1.run.app
 
 **License:** Apache License 2.0 (https://opensource.org/license/apache-2-0)
 
