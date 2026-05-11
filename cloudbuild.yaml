@@ -1,11 +1,15 @@
+substitutions:
+  _VITE_GEMINI_API_KEY: 'placeholder'
+  _VITE_GOOGLE_MAPS_API_KEY: 'placeholder'
+
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'build'
       - '--build-arg'
-      - 'VITE_GEMINI_API_KEY=AIzaSyC0yEGJx_B_YVAkfTizBc_9uvoWSB7N9Uc'
+      - 'VITE_GEMINI_API_KEY=$_VITE_GEMINI_API_KEY'
       - '--build-arg'
-      - 'VITE_GOOGLE_MAPS_API_KEY=AIzaSyDpg1dwnqLYSUElvPpDfYO5E4w7OoRQXjI'
+      - 'VITE_GOOGLE_MAPS_API_KEY=$_VITE_GOOGLE_MAPS_API_KEY'
       - '-t'
       - 'gcr.io/beyondthehorizon-495923/beyond-the-horizon:latest'
       - '.'
