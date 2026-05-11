@@ -456,7 +456,7 @@ export function Scene() {
         csvFile = '/badminton_olympians.csv';
       } else if (sportLower.includes('baseball')) {
         csvFile = '/baseball_olympians.csv';
-      } else if (sportLower.includes('basketball')) {
+      } else if (sportLower.includes('basketball') && !sportLower.includes('wheelchair') && !sportLower.includes('3x3')) {
         csvFile = '/basketball_olympians.csv';
       } else if (sportLower.includes('beach') && sportLower.includes('volleyball')) {
         csvFile = '/beach_volleyball_olympians.csv';
@@ -478,7 +478,7 @@ export function Scene() {
         csvFile = '/cycling_olympians.csv';
       } else if (sportLower.includes('diving')) {
         csvFile = '/diving_olympians.csv';
-      } else if (sportLower.includes('fencing')) {
+      } else if (sportLower.includes('fencing') && !sportLower.includes('wheelchair')) {
         csvFile = '/fencing_olympians.csv';
       } else if (sportLower.includes('field') && sportLower.includes('hockey')) {
         csvFile = '/field_hockey_olympians.csv';
@@ -486,7 +486,7 @@ export function Scene() {
         csvFile = '/figure_skating_olympians.csv';
       } else if (sportLower.includes('golf')) {
         csvFile = '/golf_olympians.csv';
-      } else if (sportLower.includes('rugby')) {
+      } else if (sportLower.includes('rugby') && !sportLower.includes('wheelchair')) {
         csvFile = '/rugby_olympians.csv';
       } else if (sportLower.includes('rowing')) {
         csvFile = '/rowing_olympians.csv';
@@ -510,7 +510,7 @@ export function Scene() {
         csvFile = '/swimming_olympians.csv';
       } else if (sportLower.includes('taekwondo')) {
         csvFile = '/taekwondo_olympians.csv';
-      } else if (sportLower.includes('tennis')) {
+      } else if (sportLower.includes('tennis') && !sportLower.includes('wheelchair')) {
         csvFile = '/tennis_olympians.csv';
       } else if (sportLower.includes('triathlon')) {
         csvFile = '/triathlon_olympians.csv';
@@ -763,7 +763,7 @@ TOP STATES: ${topStates}
         csvFile = '/taekwondo_olympians.csv';
         sportName = 'Taekwondo';
         category = 'olympians';
-      } else if (inferredSport.includes('tennis')) {
+      } else if (inferredSport.includes('tennis') && !inferredSport.includes('wheelchair')) {
         csvFile = '/tennis_olympians.csv';
         sportName = 'Tennis';
         category = 'olympians';
