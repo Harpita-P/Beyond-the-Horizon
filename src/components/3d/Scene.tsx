@@ -655,7 +655,7 @@ TOP STATES: ${topStates}
         csvFile = '/baseball_olympians.csv';
         sportName = 'Baseball';
         category = 'olympians';
-      } else if (inferredSport.includes('basketball') && !inferredSport.includes('3x3')) {
+      } else if (inferredSport.includes('basketball') && !inferredSport.includes('3x3') && !inferredSport.includes('wheelchair')) {
         csvFile = '/basketball_olympians.csv';
         sportName = 'Basketball';
         category = 'olympians';
@@ -699,7 +699,7 @@ TOP STATES: ${topStates}
         csvFile = '/diving_olympians.csv';
         sportName = 'Diving';
         category = 'olympians';
-      } else if (inferredSport.includes('fencing')) {
+      } else if (inferredSport.includes('fencing') && !inferredSport.includes('wheelchair')) {
         csvFile = '/fencing_olympians.csv';
         sportName = 'Fencing';
         category = 'olympians';
@@ -715,7 +715,7 @@ TOP STATES: ${topStates}
         csvFile = '/golf_olympians.csv';
         sportName = 'Golf';
         category = 'olympians';
-      } else if (inferredSport.includes('rugby')) {
+      } else if (inferredSport.includes('rugby') && !inferredSport.includes('wheelchair')) {
         csvFile = '/rugby_olympians.csv';
         sportName = 'Rugby';
         category = 'olympians';
