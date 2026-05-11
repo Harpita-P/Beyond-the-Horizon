@@ -79,28 +79,38 @@ export function useGeminiLive(
   }, []);
 
   const startSession = useCallback(async () => {
-    if (isActive) return;
+    console.log("[Gemini Live] Starting session...");
+    if (isActive) {
+      console.log("[Gemini Live] Session already active, returning");
+      return;
+    }
     setIsConnecting(true);
     setTranscript("");
+    console.log("[Gemini Live] Set connecting state to true");
 
     try {
       const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
       if (!apiKey) {
         throw new Error("VITE_GEMINI_API_KEY is not defined. Please check your .env file.");
       }
+      console.log("[Gemini Live] API key found");
 
       // Always create a new instance to ensure the latest API key is used
       aiRef.current = new GoogleGenAI({ apiKey });
+      console.log("[Gemini Live] GoogleGenAI instance created");
 
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       streamRef.current = stream;
+      console.log("[Gemini Live] Audio stream obtained");
 
       const audioContext = new AudioContext({ sampleRate: 16000 });
       audioContextRef.current = audioContext;
       if (audioContext.state === 'suspended') {
         await audioContext.resume();
       }
+      console.log("[Gemini Live] Audio context created, state:", audioContext.state);
 
+      console.log("[Gemini Live] Connecting to Gemini Live API...");
       const sessionPromise = aiRef.current.live.connect({
         model: MODEL_NAME,
         config: {
@@ -243,23 +253,27 @@ export function useGeminiLive(
         },
         callbacks: {
           onopen: () => {
+            console.log("[Gemini Live] onopen callback fired");
             setIsConnecting(false);
             setIsActive(true);
+            console.log("[Gemini Live] Set active state to true");
             
             // Wait for session to be ready before setting up audio
             sessionPromise.then(session => {
+              console.log("[Gemini Live] Session promise resolved, setting up audio");
               sessionRef.current = session;
               
               const source = audioContext.createMediaStreamSource(stream);
               sourceRef.current = source;
               const processor = audioContext.createScriptProcessor(4096, 1, 1);
               processorRef.current = processor;
+              console.log("[Gemini Live] Audio processor created");
 
               processor.onaudioprocess = (e) => {
                 const inputData = e.inputBuffer.getChannelData(0);
                 const pcmData = new Int16Array(inputData.length);
                 for (let i = 0; i < inputData.length; i++) {
-                  pcmData[i] = Math.max(-32768, Math.min(32767, inputData[i] * 32768));
+                  pcmData[i] = Math.max(-32768, Math.min(32767, inputData[i] * 32767));
                 }
                 
                 const base64Data = btoa(String.fromCharCode(...new Uint8Array(pcmData.buffer)));
@@ -270,6 +284,9 @@ export function useGeminiLive(
 
               source.connect(processor);
               processor.connect(audioContext.destination);
+              console.log("[Gemini Live] Audio setup complete");
+            }).catch(err => {
+              console.error("[Gemini Live] Session promise rejected:", err);
             });
           },
           onmessage: async (msg: LiveServerMessage) => {
@@ -367,21 +384,25 @@ export function useGeminiLive(
             }
           },
           onclose: () => {
+            console.log("[Gemini Live] onclose callback fired - session closed");
             stopSession();
           },
           onerror: (err) => {
-            console.error("Gemini Live Error:", err);
+            console.error("[Gemini Live] onerror callback fired:", err);
             stopSession();
           }
         }
       });
       
       sessionPromise.then(session => {
+        console.log("[Gemini Live] Session stored in ref");
         sessionRef.current = session;
+      }).catch(err => {
+        console.error("[Gemini Live] Session promise error (outside callbacks):", err);
       });
 
     } catch (error) {
-      console.error("Failed to start Gemini Live:", error);
+      console.error("[Gemini Live] Failed to start session:", error);
       setIsConnecting(false);
       stopSession();
     }
