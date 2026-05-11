@@ -1,6 +1,6 @@
 substitutions:
-  _VITE_GEMINI_API_KEY: 'placeholder'
-  _VITE_GOOGLE_MAPS_API_KEY: 'placeholder'
+  _VITE_GEMINI_API_KEY: 'your api key'
+  _VITE_GOOGLE_MAPS_API_KEY: 'your api key'
 
 steps:
   - name: 'gcr.io/cloud-builders/docker'
