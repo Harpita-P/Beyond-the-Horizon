@@ -64,6 +64,10 @@ Built using the **Google Gemini 3.1 Flash Live Preview API**, **Google Gen AI SD
 - `highlight_states`: sends geographic results to the custom **USMap3D** component, where each highlighted state displays athlete count and medal breakdowns across gold, silver, and bronze
 - Outputs are streamed back to the frontend and synchronized with the **Three.js** environment, dynamically triggering state highlighting and dynamic **3D visualizations**. Users can generate three live chart panels: **representation over time**, **hometown/state representation**, and **medal composition percentage**.
 
+<p align="center">
+  <img src="public/images/wheelchairtennis.png" alt="Wheelchair Tennis" width="70%" />
+</p>
+
 ### 2. Generative Storytelling Agent
 
 We created this agent to make the experience feel human, emotional, and inspiring — not just analytical.
