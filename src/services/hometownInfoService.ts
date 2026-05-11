@@ -1,3 +1,7 @@
+/**
+ * Hometown Info Service
+ * Hometown information generation for Team USA athletes
+ */
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || '');

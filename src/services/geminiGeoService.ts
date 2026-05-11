@@ -1,3 +1,7 @@
+/**
+ * Gemini Geo Service
+ * Geo-related queries and state analysis for Team USA athlete data
+ */
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { analyzeCSVDataForState } from './csvDataService';
 

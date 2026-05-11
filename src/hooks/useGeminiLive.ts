@@ -1,3 +1,8 @@
+/**
+ * Gemini Live Voice Agent (Conversational Data Analyst)
+ * Live voice interaction for sport queries and state highlighting
+ * Processes user voice input, infers sports, loads CSV data, and provides real-time responses
+ */
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { GoogleGenAI, Modality, LiveServerMessage, Type } from "@google/genai";
 import { MOCK_ATHLETES } from '../data/athleteData';

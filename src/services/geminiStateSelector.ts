@@ -1,3 +1,7 @@
+/**
+ * Gemini State Selector
+ * State selection and filtering for Team USA athlete data
+ */
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { analyzeCSVDataForState } from './csvDataService';
 
