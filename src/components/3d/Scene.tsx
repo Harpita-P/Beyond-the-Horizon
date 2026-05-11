@@ -1167,7 +1167,18 @@ TOP STATES: ${topStates}
                 <option value="Canoe/Kayak">Canoe/Kayak</option>
                 <option value="Cross-Country Skiing">Cross-Country Skiing</option>
                 <option value="Track and Field">Track and Field</option>
+                <option value="Curling">Curling</option>
+                <option value="Cycling">Cycling</option>
+                <option value="Diving">Diving</option>
+                <option value="Fencing">Fencing</option>
+                <option value="Field Hockey">Field Hockey</option>
+                <option value="Figure Skating">Figure Skating</option>
+                <option value="Golf">Golf</option>
                 <option value="Para Alpine Skiing">Para Alpine Skiing</option>
+                <option value="Para Archery">Para Archery</option>
+                <option value="Para Badminton">Para Badminton</option>
+                <option value="Para Biathlon">Para Biathlon</option>
+                <option value="Paratriathlon">Paratriathlon</option>
               </select>
             </div>
 
